@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Glam Makeover – Makeup Artist &amp; Academy in Nagpur</title>
+<meta name="description" content="Bridal, party and festive makeup plus a 45-day professional makeup course in Nagpur by Pooja Lade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fff8f1;--surface:#ffffff;--text:#3a1020;--muted:#7a5560;
+  --red:#9b1230;--magenta:#c2185b;--gold:#c9962b;--gold-soft:#f6e3b4;--line:#ecd9c4;
+  --hero1:#7a0c25;--hero2:#c2185b;--on-hero:#fff6e0;
+  color-scheme:light;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#1b0710;--surface:#2a0d19;--text:#fbeee0;--muted:#d4b5b8;
+    --red:#ff6b86;--magenta:#ff7ab0;--gold:#e8b94a;--gold-soft:#4a3410;--line:#4a1a2a;
+    --hero1:#4a0516;--hero2:#8e1450;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1b0710;--surface:#2a0d19;--text:#fbeee0;--muted:#d4b5b8;
+  --red:#ff6b86;--magenta:#ff7ab0;--gold:#e8b94a;--gold-soft:#4a3410;--line:#4a1a2a;
+  --hero1:#4a0516;--hero2:#8e1450;color-scheme:dark;
+}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Poppins',system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.6}
+h1,h2,h3{font-family:'Playfair Display',Georgia,'Times New Roman',serif;line-height:1.2;margin:0 0 .5em}
+a{color:inherit}
+.wrap{max-width:1050px;margin:0 auto;padding:0 20px}
+section{padding:60px 0}
+.eyebrow{color:var(--gold);letter-spacing:.2em;text-transform:uppercase;font-size:.75rem;font-weight:600}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);color:var(--red)}
+.center{text-align:center}
+.lead{color:var(--muted);max-width:620px;margin:0 auto 32px}
+
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:'Playfair Display',Georgia,serif;font-weight:700;color:var(--red);text-decoration:none;font-size:1.15rem}
+.logo span{color:var(--gold)}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;font-size:.9rem}
+nav ul a{text-decoration:none;color:var(--muted)}
+nav ul a:hover{color:var(--red)}
+@media(max-width:640px){nav ul{display:none}}
+
+.hero{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:var(--on-hero);text-align:center;padding:84px 0 92px;position:relative;overflow:hidden}
+.hero::before,.hero::after{content:"✦";position:absolute;color:var(--gold);opacity:.5;font-size:2.4rem}
+.hero::before{top:28px;left:8%}
+.hero::after{bottom:28px;right:8%;font-size:3rem}
+.hero .eyebrow{color:var(--gold-soft)}
+.hero h1{font-size:clamp(2.2rem,7vw,4rem);margin:.3em 0}
+.hero h1 em{color:var(--gold-soft);font-style:italic}
+.hero p{max-width:560px;margin:0 auto 28px;opacity:.95}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.95rem;border:2px solid var(--gold)}
+.btn.gold{background:var(--gold);color:#3a1020}
+.btn.ghost{color:var(--on-hero)}
+.btn.red{background:var(--red);border-color:var(--red);color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.red{color:#2a0d19}}
+
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;text-align:left}
+.card .ic{font-size:1.7rem;margin-bottom:8px}
+.card h3{font-size:1.15rem;color:var(--red)}
+.card p{margin:0;color:var(--muted);font-size:.92rem}
+
+.fee{background:var(--gold-soft)}
+.price-box{max-width:460px;margin:0 auto;background:var(--surface);border:2px solid var(--gold);border-radius:24px;padding:34px 26px;text-align:center}
+.price{font-family:'Playfair Display',Georgia,serif;font-size:3rem;color:var(--magenta);font-weight:700}
+.price small{display:block;font-family:'Poppins',sans-serif;font-size:.9rem;color:var(--muted);font-weight:400}
+.price-box ul{list-style:none;padding:0;margin:18px 0 24px;text-align:left}
+.price-box li{padding:6px 0 6px 28px;position:relative;font-size:.93rem}
+.price-box li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
+
+.about{display:grid;gap:30px;grid-template-columns:1fr;align-items:center}
+@media(min-width:760px){.about{grid-template-columns:1fr 1fr}}
+.badge{background:linear-gradient(135deg,var(--red),var(--magenta));color:#fff6e0;border-radius:24px;padding:40px 28px;text-align:center}
+.badge b{display:block;font-family:'Playfair Display',Georgia,serif;font-size:3.2rem;color:var(--gold-soft)}
+
+.contact .card{text-align:center}
+.contact a.line{display:block;font-weight:600;color:var(--red);text-decoration:none;margin-top:6px;word-break:break-all}
+footer{background:var(--hero1);color:var(--on-hero);text-align:center;padding:30px 20px 90px;font-size:.85rem}
+footer a{color:var(--gold-soft)}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff;text-decoration:none;font-weight:600;padding:13px 20px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:30;font-size:.92rem}
+.hero-art{width:190px;height:auto;margin:0 auto 10px;display:block;filter:drop-shadow(0 8px 18px rgba(0,0,0,.35));animation:float 4s ease-in-out infinite}
+.tw{transform-box:fill-box;transform-origin:center;animation:tw 2.4s ease-in-out infinite}
+.tw:nth-of-type(2){animation-delay:.6s}.tw:nth-of-type(3){animation-delay:1.2s}.tw:nth-of-type(4){animation-delay:1.8s}
+@keyframes float{50%{transform:translateY(-8px)}}
+@keyframes tw{50%{transform:scale(.4);opacity:.4}}
+@media (prefers-reduced-motion:reduce){.hero-art,.tw{animation:none}}
+.wave{position:absolute;left:0;bottom:-1px;width:100%;height:50px;display:block}
+.hero{padding-bottom:110px}
+h2::after{content:"";display:block;width:90px;height:12px;margin:12px 0 0;background:radial-gradient(circle at 50% 50%,var(--gold) 0 4px,transparent 5px) center/12px 12px no-repeat,linear-gradient(var(--gold),var(--gold)) left center/34px 2px no-repeat,linear-gradient(var(--gold),var(--gold)) right center/34px 2px no-repeat}
+.center h2::after{margin:12px auto 0}
+.card{transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--red),var(--magenta),var(--gold))}
+.card:hover{transform:translateY(-5px);box-shadow:0 12px 26px rgba(155,18,48,.18)}
+.card .ic{width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,var(--gold-soft),var(--surface));border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;font-size:1.6rem}
+.contact .card .ic{margin-left:auto;margin-right:auto}
+.fee{background:radial-gradient(circle at 20% 20%,rgba(201,150,43,.25) 0 2px,transparent 3px) 0 0/34px 34px,radial-gradient(circle at 70% 70%,rgba(194,24,91,.18) 0 2px,transparent 3px) 0 0/34px 34px,var(--gold-soft)}
+.price-box{box-shadow:0 14px 40px rgba(201,150,43,.35);position:relative}
+.price-box::before{content:"BEST VALUE";position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:linear-gradient(90deg,var(--red),var(--magenta));color:#fff6e0;font-size:.7rem;letter-spacing:.15em;font-weight:600;padding:5px 16px;border-radius:999px}
+.badge{position:relative;overflow:hidden}
+.badge::before,.badge::after{content:"✦";position:absolute;color:var(--gold-soft);opacity:.45}
+.badge::before{top:12px;left:16px;font-size:1.6rem}.badge::after{bottom:10px;right:16px;font-size:2.2rem}
+.hero{background:linear-gradient(135deg,var(--hero1),var(--hero2),var(--hero1));background-size:220% 220%;animation:gshift 10s ease infinite}
+.hero .wrap{position:relative;z-index:1}
+.sparks{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.sparks span{position:absolute;bottom:-20px;left:var(--l);width:var(--s);height:var(--s);background:#ffe9a8;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);opacity:0;animation:sp 7s linear infinite;animation-delay:var(--d)}
+@keyframes sp{0%{transform:translateY(0) rotate(0);opacity:0}15%{opacity:.9}100%{transform:translateY(-520px) rotate(200deg);opacity:0}}
+@keyframes gshift{50%{background-position:100% 100%}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes shine{0%{left:-60%}60%,100%{left:130%}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%,100%{box-shadow:0 0 0 18px rgba(37,211,102,0)}}
+@keyframes mq{to{transform:translateX(-50%)}}
+.hero-art circle:nth-of-type(1){transform-box:fill-box;transform-origin:center;animation:spin 22s linear infinite}
+.btn{position:relative;overflow:hidden}
+.btn.gold::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.65),transparent);transform:skewX(-20deg);animation:shine 3.2s infinite}
+.wa{animation:pulse 2s infinite}
+.tick{background:var(--hero1);color:#ffe9a8;overflow:hidden;white-space:nowrap;padding:11px 0;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase}
+.tick div{display:inline-block;animation:mq 24s linear infinite}
+.tick span{padding:0 18px}
+.rv{opacity:0;transform:translateY(30px)}
+.rv.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s ease,box-shadow .25s}
+.card.rv.in:hover{transform:translateY(-5px)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="logo" href="#top">The Glam <span>Makeover</span></a>
+  <ul>
+    <li><a href="#course">Course</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#fee">Fee</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero" id="top"><div class="sparks" aria-hidden="true"><span style="--l:6%;--d:0s;--s:12px"></span><span style="--l:17%;--d:2.2s;--s:18px"></span><span style="--l:28%;--d:4.5s;--s:10px"></span><span style="--l:39%;--d:1.1s;--s:16px"></span><span style="--l:51%;--d:5.6s;--s:12px"></span><span style="--l:62%;--d:3.3s;--s:20px"></span><span style="--l:73%;--d:0.6s;--s:11px"></span><span style="--l:84%;--d:4s;--s:16px"></span><span style="--l:93%;--d:2.8s;--s:12px"></span></div><div class="wrap">
+  <svg class="hero-art" viewBox="0 0 220 160" role="img" aria-label="Lips illustration"><defs><linearGradient id="lp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff4d7e"/><stop offset="1" stop-color="#b3123f"/></linearGradient></defs><circle cx="110" cy="82" r="72" fill="none" stroke="#e8b94a" stroke-width="2" stroke-dasharray="3 7"/><circle cx="110" cy="82" r="60" fill="rgba(255,246,224,.12)" stroke="#e8b94a" stroke-width="2"/><path d="M52 82 Q80 46 110 64 Q140 46 168 82 Q140 90 110 88 Q80 90 52 82Z" fill="url(#lp)"/><path d="M52 82 Q110 142 168 82 Q140 92 110 90 Q80 92 52 82Z" fill="url(#lp)"/><ellipse cx="118" cy="110" rx="16" ry="5" fill="#fff" opacity=".35"/><path d="M52 82 Q110 94 168 82" stroke="#7a0c25" stroke-width="2" fill="none"/><g fill="#ffe9a8"><path class="tw" d="M30 30 Q30 38 38 38 Q30 38 30 46 Q30 38 22 38 Q30 38 30 30Z"/><path class="tw" d="M196 26 Q196 36 206 36 Q196 36 196 46 Q196 36 186 36 Q196 36 196 26Z"/><path class="tw" d="M190 128 Q190 134 196 134 Q190 134 190 140 Q190 134 184 134 Q190 134 190 128Z"/><path class="tw" d="M24 118 Q24 126 32 126 Q24 126 24 134 Q24 126 16 126 Q24 126 24 118Z"/></g></svg>
+  <div class="eyebrow">Makeup Artist &amp; Academy · Nagpur</div>
+  <h1>Glam comes <em>to life</em></h1>
+  <p>Bridal, party and festive makeovers by Pooja Lade, plus a 45-day hands-on course to launch your own makeup career.</p>
+  <div class="btns">
+    <a class="btn gold" href="https://wa.me/917218920856?text=Hi%20Pooja%2C%20I%20want%20to%20know%20more%20about%20The%20Glam%20Makeover" target="_blank" rel="noopener">Book on WhatsApp</a>
+    <a class="btn ghost" href="#course">Explore the Course</a>
+  </div>
+</div>
+<svg class="wave" viewBox="0 0 1200 50" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 L0 25 Q150 0 300 25 T600 25 T900 25 T1200 25 L1200 50Z" fill="var(--bg)"/></svg></header>
+<div class="tick" aria-hidden="true"><div><span>✦ Bridal Makeup</span><span>✦ Party Makeup</span><span>✦ Hairstyling</span><span>✦ Saree Draping</span><span>✦ 45-Day Course</span><span>✦ Social Media Marketing</span><span>✦ Bridal Makeup</span><span>✦ Party Makeup</span><span>✦ Hairstyling</span><span>✦ Saree Draping</span><span>✦ 45-Day Course</span><span>✦ Social Media Marketing</span></div></div>
+
+<section id="course"><div class="wrap center">
+  <div class="eyebrow">45-Day Professional Course</div>
+  <h2>Learn it. Practise it. Promote it.</h2>
+  <p class="lead">A complete program that takes you from the basics to confidently working with real clients.</p>
+  <div class="grid">
+    <div class="card"><div class="ic">💄</div><h3>Makeup</h3><p>Skin prep, base, eyes, lips and complete looks for every occasion.</p></div>
+    <div class="card"><div class="ic">💇‍♀️</div><h3>Hairstyling</h3><p>Elegant, festive and bridal hairstyles step by step.</p></div>
+    <div class="card"><div class="ic">🥻</div><h3>Saree Draping</h3><p>Classic and modern draping styles to complete the look.</p></div>
+    <div class="card"><div class="ic">📖</div><h3>Theory Knowledge</h3><p>Products, skin types, tools and hygiene explained clearly.</p></div>
+    <div class="card"><div class="ic">🖌️</div><h3>Daily Hands-On Practice</h3><p>Practise every single day so your skills become second nature.</p></div>
+    <div class="card"><div class="ic">📱</div><h3>Social Media Marketing</h3><p>Learn to showcase your work and attract your own clients online.</p></div>
+  </div>
+</div></section>
+
+<section id="services" style="background:var(--surface)"><div class="wrap">
+  <div class="about">
+    <div>
+      <div class="eyebrow">About</div>
+      <h2>Meet Pooja Lade</h2>
+      <p style="color:var(--muted)">Pooja is the makeup artist and trainer behind The Glam Makeover in Nagpur. Since 2025 she has been creating festive, glamorous looks and teaching aspiring artists the skills and business sense to shine.</p>
+      <h3 style="font-size:1.1rem;margin-top:22px">Services</h3>
+      <p style="color:var(--muted);margin:0">Bridal makeup · Party &amp; festive makeup · Hairstyling · Saree draping · Professional makeup training</p>
+    </div>
+    <div class="badge"><b id="cnt">45</b>days to become a confident makeup artist</div>
+  </div>
+</div></section>
+
+<section class="fee" id="fee"><div class="wrap">
+  <div class="price-box">
+    <div class="eyebrow">Course Fee</div>
+    <div class="price">₹15,000<small>45-day complete makeup course</small></div>
+    <ul>
+      <li>Makeup, hairstyling and saree draping</li>
+      <li>Theory knowledge and daily hands-on practice</li>
+      <li>Social media marketing training</li>
+    </ul>
+    <a class="btn red" href="https://wa.me/917218920856?text=Hi%20Pooja%2C%20I%20want%20to%20join%20the%2045-day%20makeup%20course" target="_blank" rel="noopener">Enquire About Admission</a>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap center">
+  <div class="eyebrow">Get in touch</div>
+  <h2>Let’s make you glow</h2>
+  <p class="lead">Message us to book a makeover or join the next batch.</p>
+  <div class="grid">
+    <div class="card"><div class="ic">📞</div><h3>Call</h3><a class="line" href="tel:+917218920856">+91 72189 20856</a></div>
+    <div class="card"><div class="ic">💬</div><h3>WhatsApp</h3><a class="line" href="https://wa.me/917218920856" target="_blank" rel="noopener">Chat with us</a></div>
+    <div class="card"><div class="ic">📸</div><h3>Instagram</h3><a class="line" href="https://instagram.com/pooja_makeovers11" target="_blank" rel="noopener">@pooja_makeovers11</a></div>
+    <div class="card"><div class="ic">📍</div><h3>Location</h3><p>Nagpur, Maharashtra<br>Mon–Sat, 10 AM – 7 PM<br>By appointment</p></div>
+  </div>
+</div></section>
+
+<footer>
+  <div>© 2026 The Glam Makeover · Nagpur · Owner: Pooja Lade</div>
+  <div style="margin-top:6px">Follow <a href="https://instagram.com/pooja_makeovers11" target="_blank" rel="noopener">@pooja_makeovers11</a></div>
+</footer>
+
+<a class="wa" href="https://wa.me/917218920856" target="_blank" rel="noopener">💬 WhatsApp</a>
+<script>
+(function(){
+if(!('IntersectionObserver' in window))return;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.card,.price-box,.badge,section h2,.lead').forEach(function(el){el.classList.add('rv');io.observe(el)});
+var c=document.getElementById('cnt');
+if(c){var done=false;new IntersectionObserver(function(es,o){if(es[0].isIntersecting&&!done){done=true;var n=0;var t=setInterval(function(){n++;c.textContent=n;if(n>=45)clearInterval(t)},30);o.disconnect()}},{threshold:.5}).observe(c)}
+})();
+</script>
+</body>
+</html>
